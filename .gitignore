@@ -1,0 +1,72 @@
+## Frontend specific ##-->
+# dependencies
+**/node_modules
+**/.pnp
+**/.pnp.js
+
+# testing
+**/coverage
+
+# production
+**/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+<-----################
+
+
+*.ipynb
+*temp.py
+# html files/documents ->
+*.html
+# Image files ->
+*.png
+*.jpeg
+*.jpg
+# Microsoft files -->
+~$*.doc*
+~$*.xls*
+*.xlsx
+*.xls
+# IDE settings etc
+*.code-workspace
+*.vscode
+.idea/*
+# Byte-compiled / optimized / DLL files ####
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+#### Secret files ###
+.env
+.env*
+#### data files (h5 files and pkl files ####
+*.h5
+*.pkl
+# Include encrypted datafiles->
+!*_ENCRYPTED.h5
+!*_ENCRYPTED.pkl
+#### User specified directories ####
+
+venv/
+.venv/
+DEV/
+DEVTOOLS/
+#tests/testdata/*
+
+# if ignoring all files without extension
+#*
+#!*/
+#!*.*
+
+
+
+

@@ -1,0 +1,6 @@
+pandas
+sqlalchemy
+fastapi
+pip-tools
+cx_Oracle
+uvicorn
