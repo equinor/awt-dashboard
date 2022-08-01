@@ -23,7 +23,7 @@ async def get_welltests():
     "ec_db_hostname": "znw-db1006.statoil.no",
     "ec_db_port": 10001,
     # "ec_db_service": "U168E",
-    "ec_db_service": "T168E",
+    "ec_db_service": "U168E",
 }
     try:
         # df = ec.get_full_welltest_join(ec_dict, test_device, date_start, date_end)

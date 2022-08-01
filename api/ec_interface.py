@@ -5,20 +5,14 @@ from sqlalchemy import create_engine
 import re
 
 
-# EC_USER = "AWT"
-EC_USER = "GENERIC"
+EC_USER = "AWT"
+# EC_USER = "GENERIC"
 
 AWT_EC_USER = os.environ.get("AWT_EC_USER")
 AWT_EC_PASSWD = os.environ.get("AWT_EC_PASSWD")
 GENERIC_EC_USER = os.environ.get("GENERIC_EC_USER")
 GENERIC_EC_PASSWD = os.environ.get("GENERIC_EC_PASSWD")
 
-ec_dict = {
-    "ec_db_hostname": "znw-db1006.statoil.no",
-    "ec_db_port": 10001,
-    # "ec_db_service": "U168E",
-    "ec_db_service": "T168E",
-}
 
 
 def get_data(sql, ec_dict):
@@ -236,6 +230,12 @@ if __name__ == "__main__":
     date_start = "01.08.2021"
     date_end = "01.02.2022"
 
+    ec_dict = {
+    "ec_db_hostname": "znw-db1006.statoil.no",
+    "ec_db_port": 10001,
+    # "ec_db_service": "U168E",
+    "ec_db_service": "U168E",
+}
 
     ### Cleaning and restructuring data. Get unique pwel cols with aggregated WBI values and just 'first' for tdev and prod_test
     df = get_full_welltest_join(ec_dict, test_device, date_start, date_end)
